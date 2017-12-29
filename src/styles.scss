@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+.classic {
+  .agd-table {
+    width: 100%;
+    agd-header, agd-body {
+      width: 100%;
+    }
+    agd-header {
+      display: flex;
+      flex-direction: row;
+      agd-cell {
+        flex: auto;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        height: 40px;
+        color: #fff;
+        box-sizing: border-box;
+        padding: 10px;
+        background: #4b4d4f;
+      }
+    }
+    agd-body {
+      .no-results {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+      }
+      agd-row {
+        display: flex;
+        flex-direction: row;
+        agd-cell {
+          display: flex;
+          flex: auto;
+          padding: 5px;
+          box-sizing: border-box;
+          border: 1px solid #f4f4f4;
+        }
+      }
+    }
+  }
+}

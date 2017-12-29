@@ -7,6 +7,7 @@ import {AgdHeaderComponent} from "./components/agd-header.component";
 import {AgdRowComponent} from "./components/agd-row.component";
 import {AgdCellComponent} from "./components/agd-cell.component";
 import {AgdBodyComponent} from "./components/agd-body.component";
+import {DataManagerService} from "./services/data-manager.service";
 
 
 @NgModule({
@@ -20,7 +21,9 @@ import {AgdBodyComponent} from "./components/agd-body.component";
     imports: [
         BrowserModule
     ],
-    providers: [],
+    providers: [
+        DataManagerService
+    ],
     exports: [
         AgdTableComponent
     ]
